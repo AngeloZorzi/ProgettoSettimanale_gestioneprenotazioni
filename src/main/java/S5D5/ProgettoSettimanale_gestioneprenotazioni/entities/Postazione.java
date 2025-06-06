@@ -30,7 +30,7 @@ public class Postazione {
     @ManyToOne
     private Edificio edificio;
 
-    @OneToMany(mappedBy = "postazione")
+    @OneToMany(mappedBy = "postazione", fetch = FetchType.EAGER)
     private List<Prenotazione> prenotazioni;
 
 

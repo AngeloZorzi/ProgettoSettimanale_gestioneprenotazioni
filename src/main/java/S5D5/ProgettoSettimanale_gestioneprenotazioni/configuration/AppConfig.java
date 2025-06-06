@@ -24,9 +24,9 @@ public class AppConfig {
     public Edificio edificio2() {
         return new Edificio(
                 null,
-                "Terrazza Bonin",
-                "Corso Dei Caduti",
-                "Bologna"
+                "Terrazza Supremo",
+                "Foresta Dei Caduti",
+                "Glasgorundul"
         );
     }
 
@@ -48,7 +48,7 @@ public class AppConfig {
         return new Postazione(
                 null,
                 "P002",
-                "Open Space",
+                "Stanza dello Spirito e del Tempo",
                 TipoPostazione.OPENSPACE,
                 4,
                 edificio1,

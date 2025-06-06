@@ -20,7 +20,7 @@ public class Edificio {
     private String indirizzo;
     private String citta;
 
-    @OneToMany(mappedBy = "edificio")
+    @OneToMany(mappedBy = "edificio", fetch = FetchType.EAGER)
     private List<Postazione> postazioni;
 
     public Edificio(Long id, String nome, String indirizzo, String citta) {
