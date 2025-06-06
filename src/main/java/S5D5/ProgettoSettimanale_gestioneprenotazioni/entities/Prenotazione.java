@@ -27,4 +27,6 @@ public class Prenotazione {
 
     @ManyToOne
     private Postazione postazione;
+
+
 }

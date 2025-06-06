@@ -22,4 +22,12 @@ public class Edificio {
 
     @OneToMany(mappedBy = "edificio")
     private List<Postazione> postazioni;
+
+    public Edificio(Long id, String nome, String indirizzo, String citta) {
+        this.id = id;
+        this.nome = nome;
+        this.indirizzo = indirizzo;
+        this.citta = citta;
+    }
+
 }
