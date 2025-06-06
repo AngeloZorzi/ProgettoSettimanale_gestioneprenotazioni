@@ -14,9 +14,9 @@ public class AppConfig {
     public Edificio edificio1() {
         return new Edificio(
                 null,
-                "Palazzo A",
-                "Via Roma 1",
-                "Milano"
+                "Palazzo Sbirindul",
+                "Via Papa Giovanni",
+                "Brescia"
         );
     }
 
@@ -24,9 +24,9 @@ public class AppConfig {
     public Edificio edificio2() {
         return new Edificio(
                 null,
-                "Palazzo B",
-                "Corso Italia 25",
-                "Roma"
+                "Terrazza Bonin",
+                "Corso Dei Caduti",
+                "Bologna"
         );
     }
 
@@ -35,7 +35,7 @@ public class AppConfig {
         return new Postazione(
                 null,
                 "P001",
-                "Postazione Privata",
+                "Sgabuzzino con cuscino",
                 TipoPostazione.PRIVATO,
                 1,
                 edificio1,
