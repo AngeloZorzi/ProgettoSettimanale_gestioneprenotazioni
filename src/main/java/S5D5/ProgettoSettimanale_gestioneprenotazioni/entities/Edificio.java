@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
+import lombok.ToString;
+
 import java.util.List;
 
 @Entity
@@ -21,6 +23,7 @@ public class Edificio {
     private String citta;
 
     @OneToMany(mappedBy = "edificio", fetch = FetchType.EAGER)
+    @ToString.Exclude
     private List<Postazione> postazioni;
 
     public Edificio(Long id, String nome, String indirizzo, String citta) {

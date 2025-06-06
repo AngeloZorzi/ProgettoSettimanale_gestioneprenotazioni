@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
+import lombok.ToString;
+
 import java.util.List;
 
 @Entity
@@ -31,6 +33,7 @@ public class Postazione {
     private Edificio edificio;
 
     @OneToMany(mappedBy = "postazione", fetch = FetchType.EAGER)
+    @ToString.Exclude
     private List<Prenotazione> prenotazioni;
 
 
